@@ -73,8 +73,35 @@ export const getResponseById = async (id) => {
     }
     
     throw new Error(`Response with ID ${id} not found`)
-  } catch (error) {
+} catch (error) {
     console.error('Error fetching response by ID:', error)
+    throw error
+  }
+}
+
+// Get trending responses across all categories and languages
+export const getTrendingResponses = async () => {
+  try {
+    await new Promise(resolve => setTimeout(resolve, 300))
+    
+    const trendingResponses = []
+    
+    // Collect high-intensity responses from all categories and languages
+    for (const category of Object.keys(responseData)) {
+      for (const language of Object.keys(responseData[category])) {
+        const responses = responseData[category][language]
+        // Filter responses with intensity >= 7 for trending
+        const highIntensityResponses = responses.filter(r => r.intensity >= 7)
+        trendingResponses.push(...highIntensityResponses)
+      }
+    }
+    
+    // Shuffle and limit to 8 trending items
+    const shuffled = trendingResponses.sort(() => 0.5 - Math.random())
+    return shuffled.slice(0, 8)
+    
+  } catch (error) {
+    console.error('Error fetching trending responses:', error)
     throw error
   }
 }

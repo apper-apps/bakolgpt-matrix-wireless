@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import TrendingSection from '@/components/molecules/TrendingSection'
 import Input from '@/components/atoms/Input'
 import Card from '@/components/atoms/Card'
 import ActionButtons from '@/components/molecules/ActionButtons'
@@ -17,9 +18,10 @@ const MainContent = ({ selectedLanguage }) => {
   const [currentResponse, setCurrentResponse] = useState('')
   const [showMeme, setShowMeme] = useState(false)
   const [responseType, setResponseType] = useState('')
+  const [trendingResponses, setTrendingResponses] = useState([])
+  const [trendingLoading, setTrendingLoading] = useState(true)
   
   const { responses, loading, error, fetchResponse, retry } = useResponseService()
-  
   const handleRoastMe = async () => {
     if (!userInput.trim()) {
       toast.warning('Please enter something to roast! 🔥')
@@ -60,15 +62,49 @@ const MainContent = ({ selectedLanguage }) => {
     setUserInput('')
     setShowMeme(false)
     setResponseType('')
+}
+
+  // Fetch trending responses on component mount
+  useEffect(() => {
+    const fetchTrending = async () => {
+      try {
+        const { getTrendingResponses } = await import('@/services/api/responseService')
+        const trending = await getTrendingResponses()
+        setTrendingResponses(trending)
+      } catch (error) {
+        console.error('Error fetching trending responses:', error)
+      } finally {
+        setTrendingLoading(false)
+      }
+    }
+    
+    fetchTrending()
+  }, [])
+
+  const handleTrendingClick = (response) => {
+    setCurrentResponse(response.text)
+    setResponseType(response.category)
+    setShowMeme(true)
+    toast.success(
+      response.category === 'roast' ? 'You got roasted! 🔥' :
+      response.category === 'bakwas' ? 'Random bakwas generated! 🎭' :
+      'Drama mode activated! 💔'
+    )
   }
   
   if (loading) return <Loading />
   if (error) return <Error message={error} onRetry={retry} />
-  
-  return (
+return (
     <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
       {/* Top Banner Ad */}
       <AdSlot type="banner" className="mx-auto" />
+      
+      {/* Trending Section */}
+      <TrendingSection 
+        responses={trendingResponses}
+        loading={trendingLoading}
+        onResponseClick={handleTrendingClick}
+      />
       
       {/* Hero Section */}
       <motion.div 
