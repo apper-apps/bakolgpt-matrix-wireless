@@ -1,0 +1,266 @@
+{
+  "roast": {
+    "en": [
+      {
+        "Id": 1,
+        "category": "roast",
+        "language": "en",
+        "text": "You're like a software update - nobody wants you, but you keep showing up anyway!",
+        "intensity": 7,
+        "tags": ["tech", "savage", "modern"]
+      },
+      {
+        "Id": 2,
+        "category": "roast",
+        "language": "en",
+        "text": "If {input} was a sport, you'd still come in last place!",
+        "intensity": 6,
+        "tags": ["personalized", "competitive"]
+      },
+      {
+        "Id": 3,
+        "category": "roast",
+        "language": "en",
+        "text": "You're like a broken WiFi connection - everyone's frustrated with you!",
+        "intensity": 8,
+        "tags": ["tech", "modern", "relatable"]
+      },
+      {
+        "Id": 4,
+        "category": "roast",
+        "language": "en",
+        "text": "Your brain has the same energy as a phone on 1% battery - barely functioning!",
+        "intensity": 9,
+        "tags": ["tech", "intelligence", "modern"]
+      },
+      {
+        "Id": 5,
+        "category": "roast",
+        "language": "en",
+        "text": "You're like a pop-up ad - annoying and nobody asked for you!",
+        "intensity": 7,
+        "tags": ["tech", "annoying", "digital"]
+      }
+    ],
+    "hi": [
+      {
+        "Id": 6,
+        "category": "roast",
+        "language": "hi",
+        "text": "आप एक software update की तरह हैं - कोई नहीं चाहता लेकिन आप आते रहते हैं!",
+        "intensity": 7,
+        "tags": ["tech", "savage", "modern"]
+      },
+      {
+        "Id": 7,
+        "category": "roast",
+        "language": "hi",
+        "text": "अगर {input} एक खेल होता तो भी आप last आते!",
+        "intensity": 6,
+        "tags": ["personalized", "competitive"]
+      },
+      {
+        "Id": 8,
+        "category": "roast",
+        "language": "hi",
+        "text": "आप एक टूटे हुए internet connection की तरह हैं - सबको परेशानी!",
+        "intensity": 8,
+        "tags": ["tech", "modern", "relatable"]
+      }
+    ],
+    "pa": [
+      {
+        "Id": 9,
+        "category": "roast",
+        "language": "pa",
+        "text": "ਤੁਸੀਂ ਇੱਕ software update ਵਾਂਗ ਹੋ - ਕੋਈ ਨਹੀਂ ਚਾਹੁੰਦਾ ਪਰ ਤੁਸੀਂ ਆਉਂਦੇ ਰਹਿੰਦੇ ਹੋ!",
+        "intensity": 7,
+        "tags": ["tech", "savage", "modern"]
+      },
+      {
+        "Id": 10,
+        "category": "roast",
+        "language": "pa",
+        "text": "ਜੇ {input} ਇੱਕ ਖੇਡ ਹੁੰਦੀ ਤਾਂ ਵੀ ਤੁਸੀਂ ਆਖਰੀ ਆਉਂਦੇ!",
+        "intensity": 6,
+        "tags": ["personalized", "competitive"]
+      }
+    ]
+  },
+  "bakwas": {
+    "en": [
+      {
+        "Id": 11,
+        "category": "bakwas",
+        "language": "en",
+        "text": "I just realized why they call it 'fast food' - because you eat it fast and regret it even faster!",
+        "intensity": 5,
+        "tags": ["food", "funny", "relatable"]
+      },
+      {
+        "Id": 12,
+        "category": "bakwas",
+        "language": "en",
+        "text": "My phone battery lasts longer than my motivation on Monday mornings!",
+        "intensity": 6,
+        "tags": ["motivation", "monday", "tech"]
+      },
+      {
+        "Id": 13,
+        "category": "bakwas",
+        "language": "en",
+        "text": "I told my WiFi router a joke about bandwidth, but it didn't get the connection!",
+        "intensity": 4,
+        "tags": ["tech", "pun", "networking"]
+      },
+      {
+        "Id": 14,
+        "category": "bakwas",
+        "language": "en",
+        "text": "My coding skills are like my cooking - it works, but nobody knows how!",
+        "intensity": 7,
+        "tags": ["coding", "cooking", "mystery"]
+      },
+      {
+        "Id": 15,
+        "category": "bakwas",
+        "language": "en",
+        "text": "I'm not saying I'm old, but I remember when memes were called 'jokes'!",
+        "intensity": 5,
+        "tags": ["age", "memes", "nostalgia"]
+      }
+    ],
+    "hi": [
+      {
+        "Id": 16,
+        "category": "bakwas",
+        "language": "hi",
+        "text": "मैंने समझा कि 'fast food' क्यों कहते हैं - क्योंकि जल्दी खाते हैं और और भी जल्दी पछताते हैं!",
+        "intensity": 5,
+        "tags": ["food", "funny", "relatable"]
+      },
+      {
+        "Id": 17,
+        "category": "bakwas",
+        "language": "hi",
+        "text": "मेरे phone की battery मेरी Monday morning की motivation से ज्यादा चलती है!",
+        "intensity": 6,
+        "tags": ["motivation", "monday", "tech"]
+      },
+      {
+        "Id": 18,
+        "category": "bakwas",
+        "language": "hi",
+        "text": "मैंने अपने WiFi router को bandwidth का joke सुनाया, लेकिन उसे connection नहीं मिला!",
+        "intensity": 4,
+        "tags": ["tech", "pun", "networking"]
+      }
+    ],
+    "pa": [
+      {
+        "Id": 19,
+        "category": "bakwas",
+        "language": "pa",
+        "text": "ਮੈਂ ਸਮਝ ਗਿਆ ਕਿ 'fast food' ਕਿਉਂ ਕਹਿੰਦੇ ਹਨ - ਕਿਉਂਕਿ ਜਲਦੀ ਖਾਂਦੇ ਹਨ ਅਤੇ ਹੋਰ ਜਲਦੀ ਪਛਤਾਉਂਦੇ ਹਨ!",
+        "intensity": 5,
+        "tags": ["food", "funny", "relatable"]
+      },
+      {
+        "Id": 20,
+        "category": "bakwas",
+        "language": "pa",
+        "text": "ਮੇਰੇ phone ਦੀ battery ਮੇਰੀ Monday morning ਦੀ motivation ਨਾਲੋਂ ਜ਼ਿਆਦਾ ਚੱਲਦੀ ਹੈ!",
+        "intensity": 6,
+        "tags": ["motivation", "monday", "tech"]
+      }
+    ]
+  },
+  "emotional": {
+    "en": [
+      {
+        "Id": 21,
+        "category": "emotional",
+        "language": "en",
+        "text": "Life is like a roller coaster - full of ups and downs, but the ride is worth it when you have the right people screaming with you!",
+        "intensity": 8,
+        "tags": ["life", "friendship", "inspiring"]
+      },
+      {
+        "Id": 22,
+        "category": "emotional",
+        "language": "en",
+        "text": "Sometimes you need to break down to break through - tears are just the rain before the rainbow!",
+        "intensity": 9,
+        "tags": ["motivation", "tears", "hope"]
+      },
+      {
+        "Id": 23,
+        "category": "emotional",
+        "language": "en",
+        "text": "Your heart is like a smartphone - it needs charging from the right people to function properly!",
+        "intensity": 7,
+        "tags": ["heart", "love", "tech"]
+      },
+      {
+        "Id": 24,
+        "category": "emotional",
+        "language": "en",
+        "text": "Missing someone is like having a song stuck in your head - you can't stop thinking about it!",
+        "intensity": 8,
+        "tags": ["missing", "love", "thoughts"]
+      },
+      {
+        "Id": 25,
+        "category": "emotional",
+        "language": "en",
+        "text": "Dreams are like WiFi passwords - you need the right connection to make them work!",
+        "intensity": 6,
+        "tags": ["dreams", "motivation", "tech"]
+      }
+    ],
+    "hi": [
+      {
+        "Id": 26,
+        "category": "emotional",
+        "language": "hi",
+        "text": "जिंदगी एक roller coaster की तरह है - उतार-चढ़ाव से भरी, लेकिन जब सही लोग साथ चिल्लाते हैं तो यात्रा worth it है!",
+        "intensity": 8,
+        "tags": ["life", "friendship", "inspiring"]
+      },
+      {
+        "Id": 27,
+        "category": "emotional",
+        "language": "hi",
+        "text": "कभी-कभी आपको break down करना पड़ता है break through करने के लिए - आंसू rainbow से पहले की बारिश हैं!",
+        "intensity": 9,
+        "tags": ["motivation", "tears", "hope"]
+      },
+      {
+        "Id": 28,
+        "category": "emotional",
+        "language": "hi",
+        "text": "आपका दिल smartphone की तरह है - सही लोगों से charging चाहिए proper function के लिए!",
+        "intensity": 7,
+        "tags": ["heart", "love", "tech"]
+      }
+    ],
+    "pa": [
+      {
+        "Id": 29,
+        "category": "emotional",
+        "language": "pa",
+        "text": "ਜ਼ਿੰਦਗੀ ਇੱਕ roller coaster ਵਾਂਗ ਹੈ - ਉਤਾਰ-ਚੜ੍ਹਾਅ ਨਾਲ ਭਰੀ, ਪਰ ਜਦੋਂ ਸਹੀ ਲੋਕ ਨਾਲ ਚੀਕਦੇ ਹਨ ਤਾਂ ਯਾਤਰਾ worth it ਹੈ!",
+        "intensity": 8,
+        "tags": ["life", "friendship", "inspiring"]
+      },
+      {
+        "Id": 30,
+        "category": "emotional",
+        "language": "pa",
+        "text": "ਕਦੇ-ਕਦੇ ਤੁਹਾਨੂੰ break down ਕਰਨਾ ਪੈਂਦਾ ਹੈ break through ਕਰਨ ਲਈ - ਹੰਝੂ rainbow ਤੋਂ ਪਹਿਲਾਂ ਦੀ ਬਾਰਿਸ਼ ਹਨ!",
+        "intensity": 9,
+        "tags": ["motivation", "tears", "hope"]
+      }
+    ]
+  }
+}

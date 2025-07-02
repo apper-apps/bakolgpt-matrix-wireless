@@ -1,0 +1,123 @@
+@import 'react-toastify/dist/ReactToastify.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom toast styling */
+.Toastify__toast-container {
+  width: auto;
+  max-width: 400px;
+  z-index: 9999;
+}
+
+.Toastify__toast {
+  border-radius: 12px;
+  min-height: auto;
+  padding: 12px 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  background: linear-gradient(135deg, #8338EC, #3A0CA3);
+  color: white;
+  box-shadow: 0 10px 25px rgba(131, 56, 236, 0.3);
+}
+
+.Toastify__toast--success {
+  background: linear-gradient(135deg, #06FFA5, #00B4D8);
+}
+
+.Toastify__toast--error {
+  background: linear-gradient(135deg, #FF1654, #FF006E);
+}
+
+.Toastify__toast--warning {
+  background: linear-gradient(135deg, #FFB700, #FB5607);
+}
+
+.Toastify__progress-bar {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Canvas styling */
+.meme-canvas {
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #FF006E, #8338EC);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #FB5607, #3A0CA3);
+}
+
+/* Background gradient animation */
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-bg {
+  background: linear-gradient(-45deg, #8338EC, #3A0CA3, #FF006E, #FB5607);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+/* Neon glow effects */
+.neon-glow {
+  box-shadow: 0 0 20px rgba(255, 0, 110, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+
+.neon-glow:hover {
+  box-shadow: 0 0 30px rgba(255, 0, 110, 0.8);
+}
+
+/* Button hover effects */
+.btn-hover-scale {
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.btn-hover-scale:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+/* Text gradient effects */
+.text-gradient {
+  background: linear-gradient(135deg, #FF006E, #FFBE0B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Meme text styling */
+.meme-text {
+  text-shadow: 3px 3px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000, 1px 1px 0px #000;
+  font-weight: 900;
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .Toastify__toast-container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  
+  .meme-canvas {
+    border-radius: 12px;
+  }
+}
